@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+ max-width: 70%;
+max-width: max-content;
+margin: auto;
+background-color:#4a4848;
+
+}
+
+textarea   {
+
+    color: #2c2b2b;
+}
+
+/*T's Code */
+
+.button2 {
+    margin:  30px 0;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline:  none;
+    border:  3px solid #4b7f00;
+    position: relative;
+    z-index: 1;
+}
+
+.button2:hover {
+
+    color: black;
+    cursor: pointer;
+
+}
+
+.button2:before {
+
+    transition: 0.3s all ease;
+    position: absolute;
+    top:  0;
+    left:  50%;
+    right:  50%;
+    bottom:  0;
+    opacity: 0;
+    content: "";
+    background-color: #4b7f00;
+}
+
+.button2:hover:before {
+
+    transition: 0.5s all ease;
+    left:  0;
+    right:  0;
+    opacity:  1;
+    z-index: -1;
+}
+
+
+
+
+/* End of T's Code */
+.rt-container {
+
+  background-color: #4a4848;  
+}
+ScriptTop{
+
+    background-color:#4a4848;
+}
+
+.contact-parent{
+    background: #161515;
+    display:flex;
+    margin:80px 0;
+}
+
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+    background-color: #161515;
+    color: #4b7f00;
+}
+
+.child1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#161515;
+    padding:100px 0;
+}
+
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+
+}
+
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+    background-color:#4a4848;
+}
+
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#161515;
+    background-color:#4a4848;
+}
+
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:#4a4848;
+    border:1px solid rgba(0,0,0,0.48);
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+
+.inside-contact input[type=submit]{
+    background-color:#4a4848;
+    color:#fff;
+    transition:0.2s;
+    border:2px solid #000;
+    margin:30px 0;
+}
+
+.inside-contact input[type=submit]:hover{
+    background-color:#4a4848;
+    color:#000;
+    transition:0.2s;
+}
+
+@media screen and (max-width:991px){
+    .contact-parent{
+        display:block;
+        width:100%;
+        background-color:#4a4848;
+    }
+
+    .child1{
+        display:none;
+    }
+
+    .child2{
+        background-image:#4a4848, url("");
+        background-size:cover;
+    }
+
+    .inside-contact input, .inside-contact textarea{
+        background-color:#4a4848;
+    }
+}
